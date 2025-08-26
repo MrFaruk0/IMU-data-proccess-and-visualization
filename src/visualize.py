@@ -15,7 +15,7 @@ def plot_acc_exercise(df, exercise_label, subject=None, unit=None):
     plt.plot(subset['time'], subset['acc_y'], label='Acc Y')
     plt.plot(subset['time'], subset['acc_z'], label='Acc Z')
     plt.legend()
-    plt.title(f'{exercise_label} ivme değerleri')
+    plt.title(f'{exercise_label} {unit} ivme değerleri')
     plt.xlabel('Zaman (s)')
     plt.ylabel('ivme (m/s²)')
     plt.show()
